@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="FileLogWriter.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MultiLogger\MultiLogger.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Utilities.Extensions">
+      <HintPath>..\..\Utilities\Utilities.Extensions\bin\Release\net5.0\Utilities.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
