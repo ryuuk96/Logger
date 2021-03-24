@@ -1,7 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>E:\.Net Demo Projects\LocalPckgs\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+    <OutputPath>E:\.Net Demo Projects\LocalPckgs</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,7 +20,7 @@
 
   <ItemGroup>
     <Reference Include="Utilities.Extensions">
-      <HintPath>..\..\Utilities\Utilities.Extensions\bin\Release\net5.0\Utilities.Extensions.dll</HintPath>
+      <HintPath>..\..\..\LocalPckgs\net5.0\Utilities.Extensions.dll</HintPath>
     </Reference>
   </ItemGroup>
 

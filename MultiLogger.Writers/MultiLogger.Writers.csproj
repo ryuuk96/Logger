@@ -4,6 +4,14 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>E:\.Net Demo Projects\LocalPckgs\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>E:\.Net Demo Projects\LocalPckgs</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="FileLogWriter.cs" />
   </ItemGroup>
@@ -14,7 +22,7 @@
 
   <ItemGroup>
     <Reference Include="Utilities.Extensions">
-      <HintPath>..\..\Utilities\Utilities.Extensions\bin\Release\net5.0\Utilities.Extensions.dll</HintPath>
+      <HintPath>..\..\Utilities\Utilities.Extensions\bin\Debug\net5.0\Utilities.Extensions.dll</HintPath>
     </Reference>
   </ItemGroup>
 
